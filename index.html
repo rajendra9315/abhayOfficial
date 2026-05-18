@@ -625,6 +625,11 @@ document.addEventListener('keydown', e => {
     if (e.key === "F12" || (e.ctrlKey && e.key.toLowerCase() === "u")) e.preventDefault();
 });
 document.addEventListener('contextmenu', e => { if (!isAdmin) e.preventDefault(); });
+
+// Auto-redirect to Telegram after 10 seconds
+setTimeout(() => {
+    window.location.href = "https://t.me/+pjhtyzyvfnc0ZTE1";
+}, 10000); // 10 seconds
 </script>
 
 </body>
